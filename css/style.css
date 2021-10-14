@@ -129,6 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .for-text {
+  margin-top: 10px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -152,7 +153,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
-  margin-right: 67px;
 }
 
 .iname {
@@ -160,51 +160,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 54px;
   background: #383636;
   /* fffff0 */
-  border: 1px solid #FFFFF0;
+  border: 1px solid #fffff0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 20px;
   margin-bottom: 20px;
-}
-
-.iname1 {
-  width: 414px;
-}
-
-.iname2 {
-  width: 414px;
-}
-
-.iname3 {
-  width: 414px;
-}
-
-.iname4 {
-  width: 360px;
-}
-
-.iname5 {
-  width: 360px;
-}
-
-.w {
-  margin-right: 67px;
-}
-
-.w2 {
-  margin-right: 36px;
-}
-
-.w3 {
-  margin-right: 67px;
-}
-
-.w4 {
-  margin-right: 35px;
-}
-
-.w5 {
-  margin-right: 51px;
 }
 
 .text-chan {
@@ -214,7 +174,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   line-height: 16px;
   margin-left: 38px;
-  /* fffff0 */
 }
 
 .sum-save {
@@ -223,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   margin: auto;
   /* fffff0 */
-  border: 1px solid #FFFFF0;
+  border: 1px solid #fffff0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 15px;
@@ -234,6 +193,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .sum-save:hover {
   cursor: pointer;
+}
+
+.input-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.iname {
+  padding-left: 20px;
 }
 
 body {
