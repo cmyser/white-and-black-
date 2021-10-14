@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.welcome {
+  width: 100vw;
+  height: 100vh;
+}
+
+.welcome-sign-up {
+  background: #383636;
+}
+
+.welcome-title {
+  font-size: 64px;
+  line-height: 96px;
+  letter-spacing: 1px;
+}
+
+.welcome-title__glav {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  top: 200px;
+  left: 50%;
+}
+
+.welcome-title__white {
+  color: #fffff0;
+}
+
+.welcome-title__black {
+  color: #383636;
+}
+
+.welcome-title__sign-up {
+  padding-top: 105px;
+  padding-bottom: 115px;
+  color: #fffff0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.welcome-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.welcome-container__black {
+  width: 100%;
+  height: 100vh;
+  background: #383636;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.welcome-container__white {
+  width: 100%;
+  height: 100vh;
+  background: #fffff0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.welcome-container-btn {
+  margin-bottom: 220px;
+}
+
+.welcome-container-btn:active {
+  margin-bottom: 215px;
+}
+
+.welcome-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.welcome-form__up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.welcome-form__down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.welcome-form__input {
+  display: block;
+  width: 450px;
+  height: 80px;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  background: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.welcome-form__input::-webkit-input-placeholder {
+  color: #fffff0;
+  opacity: 0.7;
+}
+
+.welcome-form__input-white {
+  color: #fffff0;
+  border: 2px solid #fffff0;
+}
+
+.btn {
+  font-size: 36px;
+  line-height: 54px;
+  padding: 20px 40px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-white {
+  border: 3px solid #fffff0;
+  color: #fffff0;
+}
+
+.btn-black {
+  border: 3px solid #383636;
+  color: #383636;
+}
