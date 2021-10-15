@@ -225,6 +225,11 @@ body {
   position: relative;
 }
 
+.welcome-sign-in {
+  background: #fffff0;
+  position: relative;
+}
+
 .welcome-title {
   font-size: 64px;
   line-height: 96px;
@@ -252,6 +257,17 @@ body {
   padding-top: 105px;
   padding-bottom: 115px;
   color: #fffff0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.welcome-title__sign-in {
+  padding-top: 105px;
+  color: #383636;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,6 +333,10 @@ body {
           flex-direction: column;
 }
 
+.welcome-form__sign-in {
+  padding-top: 55px;
+}
+
 .welcome-form__up {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,14 +372,24 @@ body {
   line-height: 27px;
 }
 
-.welcome-form__input::-webkit-input-placeholder {
+.welcome-form__input-white {
+  color: #fffff0;
+  border: 2px solid #fffff0;
+}
+
+.welcome-form__input-white::-webkit-input-placeholder {
   color: #fffff0;
   opacity: 0.7;
 }
 
-.welcome-form__input-white {
-  color: #fffff0;
-  border: 2px solid #fffff0;
+.welcome-form__input-black {
+  color: #383636;
+  border: 2px solid #383636;
+}
+
+.welcome-form__input-black::-webkit-input-placeholder {
+  color: #383636;
+  opacity: 0.7;
 }
 
 .welcome-form__politica {
@@ -466,4 +496,10 @@ body {
   width: 80px;
   height: 1px;
   background: #fffff0;
+}
+
+.sign-in__user-icon {
+  display: block;
+  padding-top: 65px;
+  margin: 0 auto;
 }
