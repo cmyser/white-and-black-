@@ -600,10 +600,6 @@ body {
   line-height: 27px;
 }
 
-.password-body-form__input:not([value]) {
-  background: red;
-}
-
 .password-body-form__input:focus {
   opacity: 1;
 }

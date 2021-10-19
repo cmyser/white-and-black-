@@ -324,9 +324,9 @@ body {
       font-weight: normal;
       font-size: 18px;
       line-height: 27px;
-      &:not([value]){
-        background: red;
-      }
+      // &[value=""]{
+      //   background: red;
+      // }
       &:focus{
         opacity: 1
       }
