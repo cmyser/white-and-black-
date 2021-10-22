@@ -1,65 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/script-user.js"></script>
+    <title>Страница пользователя</title>
 </head>
 
 <body>
-    <div class="user-container">
-        <div class="user-t">
-            <h1 class="user-text">Settings</h1>
-
-            <img class="svg" src="./img/svg/back.svg" alt="">
-        </div>
-
-
-        <div class="white-line">
-
-        </div>
-
-        <div class="cirkle">
-            <img src="./img/images/ava.png" alt="">
-        </div>
-
-        <div class="text-form"> 
-            <h1 class="for-text">Login</h1>
-        </div>
-
-        <form class="form">
-            <div class="input-content">
-                <label class="lname">Login</label>
-                <input type="text" class="iname" placeholder="Login">
-            </div>
-            <div class="input-content">
-                <label class="lname  ">Username</label>
-                <input type="text" class="iname" placeholder="Username">
-            </div>
-            <div class="input-content">
-                <label class="lname ">Email</label>
-                <input type="text" class="iname" placeholder="Email">
-            </div>
-            <span class="text-chan">* Change password:</span>
-            <div class="input-content">
-                <label class="lname  ">Current Password</label>
-                <input type="text" class="iname" placeholder="Current Password">
-            </div>
-            <div class="input-content">
-                <label class="lname ">Password again</label>
-                <input type="text" class="iname" placeholder="Password again">
-            </div>
-        </form>
-
-        <input class="sum-save" type="submit" value="Save">
-
-    </div>
-
-
 
 </body>
+<div class="user-p">
+    <header class="user-p-header">
+        <div class="user-p-header__container">
+
+            <p class="user-p-header__text">Settings</p>
+            <img src="./img/svg/close.svg" alt="close" class="user-p-header__img">
+        </div>
+    </header>
+
+    <div class="user-p__content">
+        <div class="user-p__content-container">
+            <div class="user-p__content-foto">
+                <div class="user-p__content-foto-img"><img src="#" alt="#"></div>
+                <div class="user-p__content-foto-upload">
+                    <div class="user-p__content-foto-upload-img"><img src="#" alt="#"></div>
+                    <div class="user-p__content-foto-upload-text">Upload image</div>
+                </div>
+                <div class="user-p__content-foto-btn">
+                    Delete
+                </div>
+            </div>
+
+            <div class="user-p__content-info">
+                <div class="user-p__content-info-up">
+                    <div class="user-p__content-info-container">
+                        <label for="#" class="user-p__content-info-container-label"></label>
+                        <input type="text" class="user-p__content-info-container-input">
+                    </div>
+                </div>
+                <div class="user-p__content-info-down">
+                    <div class="user-p__content-info-btn">
+                        Save
+                    </div>
+                    <a href="#" class="user-p__content-info-reset">Reset password </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 </html>

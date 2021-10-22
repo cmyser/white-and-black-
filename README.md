@@ -72,3 +72,8 @@ https://www.figma.com/file/atGd1PvJwYPQXdiBSm95ei/First-site?node-id=0%3A1
 
  - node js
 
+# от 22.10.2021
+
+ - готова шапка 
+ - готова структура остального профиля осталось только стилезовать
+
