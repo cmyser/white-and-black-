@@ -1,11 +1,11 @@
 $color-white: #fffff0;
-$color-black: #383636; 
+$color-black: #383636;
 
 @mixin bg($size: cover) {
   background-size: $size;
   background-repeat: no-repeat;
   background-position: center;
-}  
+}
 
 @mixin standartAnimate($time: 0.3s) {
   transition: ease-in $time;
@@ -16,7 +16,6 @@ $color-black: #383636;
 @import "_styke-user.scss";
 @import "_stele-404.scss";
 
-
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
@@ -26,6 +25,9 @@ body {
 .welcome {
   width: 100%;
   height: 100%;
+  &-body {
+    overflow: hidden;
+  }
   &-sign-up {
     background: $color-black;
     position: relative;
@@ -79,7 +81,8 @@ body {
 
       display: flex;
       justify-content: center;
-      align-items: flex-end;
+      align-items: flex-start;
+      padding-bottom: 500px;
     }
     &__white {
       width: 100%;
@@ -88,12 +91,13 @@ body {
 
       display: flex;
       justify-content: center;
-      align-items: flex-end;
+      align-items: flex-start;
+      padding-bottom: 200px;
     }
     &-btn {
-      margin-bottom: 220px;
+      margin-top: 720px;
       &:active {
-        margin-bottom: 215px;
+        margin-top: 725px;
       }
     }
   }
@@ -211,10 +215,20 @@ body {
   &-white {
     border: 3px solid $color-white;
     color: $color-white;
+    @include standartAnimate();
+    &:hover {
+      background: $color-white;
+      color: $color-black;
+    }
   }
   &-black {
     border: 3px solid $color-black;
     color: $color-black;
+    @include standartAnimate();
+    &:hover {
+      background: $color-black;
+      color: $color-white;
+    }
   }
   &__sign-in {
     margin-top: 50px;
@@ -312,7 +326,6 @@ body {
       height: 80px;
       margin-bottom: 20px;
 
-
       opacity: 0.5;
       outline: none;
       border: none;
@@ -331,30 +344,32 @@ body {
       // &:not([value=""]){
       //   background: red;
       // }
-      &:focus{
-        opacity: 1
+      &:focus {
+        opacity: 1;
       }
       // &:valid{outline: solid blue 2px;}
-      &:invalid{opacity: 1}
-      
+      &:invalid {
+        opacity: 1;
+      }
+
       &::-webkit-input-placeholder {
         color: $color-black;
         opacity: 0.5;
       }
-      &:last-of-type{
+      &:last-of-type {
         margin-bottom: 0px;
       }
     }
     &__btn {
       opacity: 0.8;
-      
+
       justify-self: center;
       align-self: center;
       background: inherit;
-      
+
       padding: 20px 40px;
       margin-top: 70px;
-      
+
       font-style: normal;
       font-weight: normal;
       font-size: 36px;
@@ -364,12 +379,63 @@ body {
       border: 3px solid $color-black;
       box-sizing: border-box;
       border-radius: 10px;
-      
+
       @include standartAnimate();
-      &:hover{
+      &:hover {
         background: $color-black;
         color: $color-white;
       }
     }
   }
 }
+
+
+@media screen and (max-height: 900px){
+  .welcome {
+    &-container {
+      &-btn {
+        margin-top: 620px;
+        &:active {
+          margin-top: 625px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-height: 740px){
+  .welcome {
+    &-container {
+      &-btn {
+        margin-top: 520px;
+        &:active {
+          margin-top: 525px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-height: 640px){
+  .welcome {
+    &-container {
+      &-btn {
+        margin-top: 420px;
+        &:active {
+          margin-top: 425px;
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 950px){
+  .welcome {
+    &-title {
+      font-size: 48px;
+      &__glav {
+        top: 150px;
+      }
+    }
+  }
+}
+

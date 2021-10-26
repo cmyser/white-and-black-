@@ -428,6 +428,10 @@ body {
   height: 100%;
 }
 
+.welcome-body {
+  overflow: hidden;
+}
+
 .welcome-sign-up {
   background: #383636;
   position: relative;
@@ -500,9 +504,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 500px;
 }
 
 .welcome-container__white {
@@ -515,17 +520,18 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-bottom: 200px;
 }
 
 .welcome-container-btn {
-  margin-bottom: 220px;
+  margin-top: 720px;
 }
 
 .welcome-container-btn:active {
-  margin-bottom: 215px;
+  margin-top: 725px;
 }
 
 .welcome-form {
@@ -669,11 +675,25 @@ body {
 .btn-white {
   border: 3px solid #fffff0;
   color: #fffff0;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+.btn-white:hover {
+  background: #fffff0;
+  color: #383636;
 }
 
 .btn-black {
   border: 3px solid #383636;
   color: #383636;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+.btn-black:hover {
+  background: #383636;
+  color: #fffff0;
 }
 
 .btn__sign-in {
@@ -851,4 +871,40 @@ body {
 .password-body-form__btn:hover {
   background: #383636;
   color: #fffff0;
+}
+
+@media screen and (max-height: 900px) {
+  .welcome-container-btn {
+    margin-top: 620px;
+  }
+  .welcome-container-btn:active {
+    margin-top: 625px;
+  }
+}
+
+@media screen and (max-height: 740px) {
+  .welcome-container-btn {
+    margin-top: 520px;
+  }
+  .welcome-container-btn:active {
+    margin-top: 525px;
+  }
+}
+
+@media screen and (max-height: 640px) {
+  .welcome-container-btn {
+    margin-top: 420px;
+  }
+  .welcome-container-btn:active {
+    margin-top: 425px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .welcome-title {
+    font-size: 48px;
+  }
+  .welcome-title__glav {
+    top: 150px;
+  }
 }
