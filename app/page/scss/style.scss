@@ -1,9 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import "_null.scss";
-@import "_styke-user.scss";
-
 $color-white: #fffff0;
-$color-black: #383636;
+$color-black: #383636; 
 
 @mixin bg($size: cover) {
   background-size: $size;
@@ -14,6 +10,12 @@ $color-black: #383636;
 @mixin standartAnimate($time: 0.3s) {
   transition: ease-in $time;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import "_null.scss";
+@import "_styke-user.scss";
+@import "_stele-404.scss";
+
 
 body {
   font-family: "Roboto", sans-serif;
