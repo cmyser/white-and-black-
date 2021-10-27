@@ -27,6 +27,12 @@ body {
   height: 100%;
   &-body {
     overflow: hidden;
+    &-sign-up {
+      background: $color-black;
+      padding-bottom: 50px;
+      width: auto;
+      height: auto;
+    }
   }
   &-sign-up {
     background: $color-black;
@@ -260,16 +266,18 @@ body {
   }
 }
 .down-welcome {
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 27px;
-  position: absolute;
   a {
+    margin-top: 20px;
+    display: inline-block;
     color: inherit;
   }
 }
@@ -389,8 +397,7 @@ body {
   }
 }
 
-
-@media screen and (max-height: 900px){
+@media screen and (max-height: 900px) {
   .welcome {
     &-container {
       &-btn {
@@ -402,7 +409,7 @@ body {
     }
   }
 }
-@media screen and (max-height: 740px){
+@media screen and (max-height: 740px) {
   .welcome {
     &-container {
       &-btn {
@@ -414,7 +421,7 @@ body {
     }
   }
 }
-@media screen and (max-height: 640px){
+@media screen and (max-height: 640px) {
   .welcome {
     &-container {
       &-btn {
@@ -426,11 +433,11 @@ body {
     }
   }
 }
-@media screen and (max-height: 520px){
+@media screen and (max-height: 520px) {
   .welcome {
     &-title {
       &__glav {
-        top: 40px !important; 
+        top: 40px !important;
       }
     }
     &-container {
@@ -443,9 +450,8 @@ body {
     }
   }
 }
-@media screen and (max-height: 420px){
+@media screen and (max-height: 420px) {
   .welcome {
-    
     &-container {
       &-btn {
         margin-top: 250px;
@@ -456,9 +462,8 @@ body {
     }
   }
 }
-@media screen and (max-height: 360px){
+@media screen and (max-height: 360px) {
   .welcome {
-    
     &-container {
       &-btn {
         margin-top: 220px;
@@ -470,13 +475,12 @@ body {
   }
 }
 
-
-@media screen and (max-width: 950px){
+@media screen and (max-width: 950px) {
   .welcome {
     &-title {
       font-size: 48px;
       &__glav {
-        top: 150px; 
+        top: 150px;
       }
     }
   }
@@ -485,12 +489,15 @@ body {
     padding: 15px 35px;
   }
 }
-@media screen and (max-width: 720px){
+@media screen and (max-width: 720px) {
   .welcome {
     &-title {
       font-size: 32px;
       &__glav {
-        top: 100px; 
+        top: 100px;
+      }
+      &__sign-up {
+        font-size: 48px ;
       }
     }
   }
@@ -499,13 +506,45 @@ body {
     padding: 12px 32px;
   }
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
   .welcome {
     &-title {
       width: 300px;
       font-size: 32px;
+      text-align: center;
+      margin: 0 auto;
       &__glav {
-        top: 60px; 
+        top: 60px;
+      }
+      &__sign-up {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        color: $color-white;
+      }
+    }
+    &-form {
+      &__sign-in {
+        padding-top: 55px;
+      }
+      &__down {
+        margin-top: 30px;
+        width: 350px;
+      }
+      &__input {
+        width: 350px;
+        height: 60px;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      &__politica {
+        #checkbox + label:before {
+          font-size: 14px;
+        }
+      }
+      span {
+        font-size: 16px;
+        margin-left: 10px;
       }
     }
   }
@@ -514,10 +553,58 @@ body {
     padding: 10px 28px;
   }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 400px) {
   .btn {
     font-size: 16px;
     padding: 8px 20px;
   }
-}
+  .welcome {
+    &-title {
+      width: 300px;
+      font-size: 32px;
+      text-align: center;
+      margin: 0 auto;
+      &__glav {
+        top: 60px;
+      }
+      &__sign-up {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        color: $color-white;
+      }
+    }
+    &-form {
+      &__down {
+        margin-top: 15px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+      }
 
+      &__input {
+        width: 250px;
+        height: 50px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 27px;
+      }
+
+      &__politica {
+        margin-bottom: 30px;
+        #checkbox + label {
+          width: 20px;
+          height: 20px;
+        }
+        #checkbox + label:before {
+          font-size: 14px;
+        }
+      }
+      span {
+        font-size: 16px;
+        margin-left: 10px;
+      }
+    }
+  }
+}

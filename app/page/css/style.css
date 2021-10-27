@@ -432,6 +432,13 @@ body {
   overflow: hidden;
 }
 
+.welcome-body-sign-up {
+  background: #383636;
+  padding-bottom: 50px;
+  width: auto;
+  height: auto;
+}
+
 .welcome-sign-up {
   background: #383636;
   position: relative;
@@ -729,18 +736,19 @@ body {
 }
 
 .down-welcome {
-  bottom: 20px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 27px;
-  position: absolute;
 }
 
 .down-welcome a {
+  margin-top: 20px;
+  display: inline-block;
   color: inherit;
 }
 
@@ -950,6 +958,9 @@ body {
   .welcome-title__glav {
     top: 100px;
   }
+  .welcome-title__sign-up {
+    font-size: 48px;
+  }
   .btn {
     font-size: 20px;
     padding: 12px 32px;
@@ -960,9 +971,36 @@ body {
   .welcome-title {
     width: 300px;
     font-size: 32px;
+    text-align: center;
+    margin: 0 auto;
   }
   .welcome-title__glav {
     top: 60px;
+  }
+  .welcome-title__sign-up {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #fffff0;
+  }
+  .welcome-form__sign-in {
+    padding-top: 55px;
+  }
+  .welcome-form__down {
+    margin-top: 30px;
+    width: 350px;
+  }
+  .welcome-form__input {
+    width: 350px;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .welcome-form__politica #checkbox + label:before {
+    font-size: 14px;
+  }
+  .welcome-form span {
+    font-size: 16px;
+    margin-left: 10px;
   }
   .btn {
     font-size: 18px;
@@ -974,5 +1012,55 @@ body {
   .btn {
     font-size: 16px;
     padding: 8px 20px;
+  }
+  .welcome-title {
+    width: 300px;
+    font-size: 32px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .welcome-title__glav {
+    top: 60px;
+  }
+  .welcome-title__sign-up {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #fffff0;
+  }
+  .welcome-form__down {
+    margin-top: 15px;
+    width: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .welcome-form__input {
+    width: 250px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 27px;
+  }
+  .welcome-form__politica {
+    margin-bottom: 30px;
+  }
+  .welcome-form__politica #checkbox + label {
+    width: 20px;
+    height: 20px;
+  }
+  .welcome-form__politica #checkbox + label:before {
+    font-size: 14px;
+  }
+  .welcome-form span {
+    font-size: 16px;
+    margin-left: 10px;
   }
 }
