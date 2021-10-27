@@ -1,0 +1,229 @@
+@media screen and (max-height: 900px) {
+  .welcome {
+    &-container {
+      &-btn {
+        margin-top: 620px;
+        &:active {
+          margin-top: 625px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-height: 740px) {
+  .welcome {
+    &-container {
+      &-btn {
+        margin-top: 520px;
+        &:active {
+          margin-top: 525px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-height: 640px) {
+  .welcome {
+    &-container {
+      &-btn {
+        margin-top: 420px;
+        &:active {
+          margin-top: 425px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-height: 520px) {
+  .welcome {
+    &-title {
+      &__glav {
+        top: 40px !important;
+      }
+    }
+    &-container {
+      &-btn {
+        margin-top: 320px;
+        &:active {
+          margin-top: 325px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-height: 420px) {
+  .welcome {
+    &-container {
+      &-btn {
+        margin-top: 250px;
+        &:active {
+          margin-top: 255px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-height: 360px) {
+  .welcome {
+    &-container {
+      &-btn {
+        margin-top: 220px;
+        &:active {
+          margin-top: 225px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .welcome {
+    &-title {
+      font-size: 48px;
+      &__glav {
+        top: 150px;
+      }
+    }
+  }
+  .btn {
+    font-size: 24px;
+    padding: 15px 35px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .welcome {
+    &-title {
+      font-size: 32px;
+      &__glav {
+        top: 100px;
+      }
+      &__sign-up, &__sign-in {
+        font-size: 48px;
+      }
+    }
+  }
+  .btn {
+    font-size: 20px;
+    padding: 12px 32px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .welcome {
+    &-title {
+      width: 300px;
+      font-size: 32px;
+      text-align: center;
+      margin: 0 auto;
+      &__glav {
+        top: 60px;
+      }
+      &__sign-up {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        color: $color-white;
+      }
+      &__sign-in {
+        padding-top: 60px;
+      }
+    }
+    &-form {
+      &__sign-in {
+        padding-top: 55px;
+      }
+      &__down {
+        margin-top: 30px;
+        width: 350px;
+      }
+      &__input {
+        width: 350px;
+        height: 60px;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+
+      &__politica {
+        #checkbox + label:before {
+          font-size: 14px;
+        }
+      }
+      span {
+        font-size: 16px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .btn {
+    font-size: 18px;
+    padding: 10px 28px;
+  }
+  .forgot-password {
+    font-size: 12px;
+    margin-right: -200px;
+  }
+  .sign-in__user-icon {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 35px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .btn {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+  .welcome {
+    &-title {
+      width: 300px;
+      font-size: 32px;
+      text-align: center;
+      margin: 0 auto;
+      &__glav {
+        top: 60px;
+      }
+      &__sign-up {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        color: $color-white;
+      }
+    }
+    &-form {
+      &__down {
+        margin-top: 15px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      &__input {
+        width: 250px;
+        height: 50px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 27px;
+      }
+
+      &__politica {
+        margin-bottom: 30px;
+        #checkbox + label {
+          width: 20px;
+          height: 20px;
+        }
+        #checkbox + label:before {
+          font-size: 14px;
+        }
+      }
+      span {
+        font-size: 16px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .forgot-password {
+    font-size: 12px;
+    margin-right: -100px;
+  }
+}
