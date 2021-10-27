@@ -417,9 +417,23 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.password {
+  padding: 100px 0;
+  background: #fffff0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .password-body {
   width: 100%;
-  height: 100%;
+  height: auto;
   background: #fffff0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,7 +445,9 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .password-body__title {
@@ -901,63 +917,6 @@ body {
   border: 1px solid #383636;
 }
 
-@media screen and (max-height: 900px) {
-  .welcome-container-btn {
-    margin-top: 620px;
-  }
-  .welcome-container-btn:active {
-    margin-top: 625px;
-  }
-}
-
-@media screen and (max-height: 740px) {
-  .welcome-container-btn {
-    margin-top: 520px;
-  }
-  .welcome-container-btn:active {
-    margin-top: 525px;
-  }
-}
-
-@media screen and (max-height: 640px) {
-  .welcome-container-btn {
-    margin-top: 420px;
-  }
-  .welcome-container-btn:active {
-    margin-top: 425px;
-  }
-}
-
-@media screen and (max-height: 520px) {
-  .welcome-title__glav {
-    top: 40px !important;
-  }
-  .welcome-container-btn {
-    margin-top: 320px;
-  }
-  .welcome-container-btn:active {
-    margin-top: 325px;
-  }
-}
-
-@media screen and (max-height: 420px) {
-  .welcome-container-btn {
-    margin-top: 250px;
-  }
-  .welcome-container-btn:active {
-    margin-top: 255px;
-  }
-}
-
-@media screen and (max-height: 360px) {
-  .welcome-container-btn {
-    margin-top: 220px;
-  }
-  .welcome-container-btn:active {
-    margin-top: 225px;
-  }
-}
-
 @media screen and (max-width: 950px) {
   .welcome-title {
     font-size: 48px;
@@ -984,6 +943,25 @@ body {
   .btn {
     font-size: 20px;
     padding: 12px 32px;
+  }
+  .password-body__title {
+    font-size: 48px;
+  }
+  .password-body-form {
+    padding-top: 80px;
+  }
+  .password-body-form__input {
+    width: 400px;
+    height: 70px;
+    margin-bottom: 20px;
+    padding: 26px 20px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .password-body-form__btn {
+    padding: 18px 35px;
+    margin-top: 70px;
+    font-size: 28px;
   }
 }
 
@@ -1039,6 +1017,25 @@ body {
     display: block;
     margin: 0 auto;
     margin-top: 35px;
+  }
+  .password-body__title {
+    font-size: 32px;
+  }
+  .password-body-form {
+    padding-top: 50px;
+  }
+  .password-body-form__input {
+    width: 360px;
+    height: 70px;
+    margin-bottom: 20px;
+    padding: 26px 20px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .password-body-form__btn {
+    padding: 16px 30px;
+    margin-top: 40px;
+    font-size: 20px;
   }
 }
 
@@ -1100,5 +1097,93 @@ body {
   .forgot-password {
     font-size: 12px;
     margin-right: -100px;
+  }
+  .password-body__title {
+    font-size: 32px;
+  }
+  .password-body-form {
+    padding-top: 50px;
+  }
+  .password-body-form__input {
+    width: 300px;
+    height: 70px;
+    margin-bottom: 20px;
+    padding: 26px 20px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .password-body-form__btn {
+    padding: 16px 30px;
+    margin-top: 40px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .welcome-container-btn {
+    margin-top: 620px;
+  }
+  .welcome-container-btn:active {
+    margin-top: 625px;
+  }
+}
+
+@media screen and (max-height: 740px) {
+  .welcome-container-btn {
+    margin-top: 520px;
+  }
+  .welcome-container-btn:active {
+    margin-top: 525px;
+  }
+}
+
+@media screen and (max-height: 640px) {
+  .welcome-container-btn {
+    margin-top: 420px;
+  }
+  .welcome-container-btn:active {
+    margin-top: 425px;
+  }
+  .password-body {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (max-height: 520px) {
+  .welcome-title__glav {
+    top: 40px !important;
+  }
+  .welcome-container-btn {
+    margin-top: 320px;
+  }
+  .welcome-container-btn:active {
+    margin-top: 325px;
+  }
+  .password-body {
+    padding-top: 200px;
+  }
+}
+
+@media screen and (max-height: 420px) {
+  .welcome-container-btn {
+    margin-top: 250px;
+  }
+  .welcome-container-btn:active {
+    margin-top: 255px;
+  }
+  .password-body {
+    padding-top: 300px;
+  }
+}
+
+@media screen and (max-height: 360px) {
+  .welcome-container-btn {
+    margin-top: 220px;
+  }
+  .welcome-container-btn:active {
+    margin-top: 225px;
+  }
+  .password-body {
+    padding-top: 450px;
   }
 }
