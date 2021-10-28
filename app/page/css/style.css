@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-.user-p {
+.user-p__body {
   background-color: #383636;
 }
 
@@ -153,6 +153,8 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .user-p__content-foto {
@@ -170,6 +172,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 60px;
 }
 
 .user-p__content-foto-img {
@@ -213,6 +216,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 24px;
   height: 24px;
   display: block;
+}
+
+.user-p__content-foto-upload-img > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 .user-p__content-foto-upload-text {
@@ -277,7 +289,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .user-p__content-info-container {
+  width: 350px;
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .user-p__content-info-container-label {
@@ -290,11 +309,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .user-p__content-info-container-input {
+  width: auto;
+  max-width: 200px;
   margin-left: 20px;
   display: inline-block;
   height: 27px;
   padding: 5px 10px;
-  border: 1px solid inherit;
+  border: 1px solid none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 10px;
@@ -863,10 +884,6 @@ body {
   background: #383636;
 }
 
-.sign-in-down::before__container {
-  padding-bottom: 20px;
-}
-
 .down-welcome {
   position: relative;
   display: block;
@@ -928,6 +945,19 @@ body {
     font-size: 24px;
     padding: 15px 35px;
   }
+  .user-p__content {
+    padding-bottom: 264px;
+    padding-top: 80px;
+  }
+  .user-p__content-info {
+    width: 700px;
+  }
+  .user-p__content-info-up {
+    min-height: 600px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -962,6 +992,20 @@ body {
     padding: 18px 35px;
     margin-top: 70px;
     font-size: 28px;
+  }
+  .user-p__content {
+    padding-bottom: 64px;
+    padding-top: 80px;
+  }
+  .user-p__content-info {
+    width: 100%;
+    margin: 0 30px;
+  }
+  .user-p__content-info-up {
+    min-height: 600px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -1036,6 +1080,85 @@ body {
     padding: 16px 30px;
     margin-top: 40px;
     font-size: 20px;
+  }
+  .user-p-header {
+    height: 80px;
+  }
+  .user-p-header__text {
+    font-size: 20px;
+  }
+  .user-p-header__back {
+    font-size: 20px;
+  }
+  .user-p-header__back-img {
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+  }
+  .user-p__content {
+    padding-bottom: 44px;
+    padding-top: 60px;
+  }
+  .user-p__content-foto {
+    width: 200px;
+    margin-bottom: 60px;
+  }
+  .user-p__content-foto-img {
+    width: 200px;
+    height: 200px;
+  }
+  .user-p__content-foto-upload {
+    margin-top: 30px;
+    width: 170px;
+    height: 49px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .user-p__content-foto-upload-img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  .user-p__content-foto-upload-text {
+    font-size: 16px;
+  }
+  .user-p__content-foto-btn {
+    margin-top: 20px;
+    padding: 8px 30px;
+    font-size: 16px;
+  }
+  .user-p__content-info {
+    width: 100%;
+    margin: 0 30px;
+  }
+  .user-p__content-info-up {
+    min-height: 850px;
+    padding: 25px;
+  }
+  .user-p__content-info-container {
+    width: 250px;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .user-p__content-info-container-input {
+    margin: 0;
+    text-align: center;
   }
 }
 

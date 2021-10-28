@@ -22,13 +22,13 @@ router.get("/user", (req, res) => {
 
 
 router.get("/forget_password_1.html", (req, res) => {
-	res.sendFile(path.join(__dirname, "../page/html password/forget_password_1.html"));
+	res.sendFile(path.join(__dirname, "../page/forget_password_1.html"));
 });
 router.get("/forget_password_2.html", (req, res) => {
-	res.sendFile(path.join(__dirname, "../page/html password/forget_password_2.html"));
+	res.sendFile(path.join(__dirname, "../page/forget_password_2.html"));
 });
 router.get("/forget_password_3.html", (req, res) => {
-	res.sendFile(path.join(__dirname, "../page/html password/forget_password_3.html"));
+	res.sendFile(path.join(__dirname, "../page/forget_password_3.html"));
 });
 
 module.exports = router;
